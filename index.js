@@ -11,25 +11,39 @@ They should return the result of the respective calculation:
 */
 
 function add(a, b) {
-  // Code here
+  return a + b;
 }
 
 function subtract(a, b) {
-  // Code here
+  return a - b;
 }
 
 function multiply(a, b) {
-  // Code here
+  return a * b;
 }
 
 function divide(a, b) {
-  // Code here
+  return a / b;
 }
 
 function remainder(a, b) {
-  // Code here
+  if (b !== 0) {
+    return a % b;
+  } else {
+    return null;
+    console.error("Error: Division by zero");
+    return undefined;
+  }
 }
 
+const a = 4;
+const b = 1;
+
+console.log(add(a, b));
+console.log(subtract(a, b));
+console.log(multiply(a, b));
+console.log(divide(a, b));
+console.log(remainder(a, b));
 /*
 These console.asserts check if your functions are correct. If nothing appears in your console it works properly!
 */
